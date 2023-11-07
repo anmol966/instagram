@@ -10,8 +10,7 @@ const { Pool } = pg;
 // });
 
 const pool = new Pool({
-  connectionString:
-    "postgres://anmolpanwar966:ZT8kaFOde7Lz@ep-yellow-shadow-87467895-pooler.us-east-2.aws.neon.tech/instagram_database",
+  connectionString: process.env.CONN_STRING,
   ssl: {
     rejectUnauthorized: false,
   },
